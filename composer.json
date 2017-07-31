@@ -1,0 +1,17 @@
+{
+    "name": "dezashibi/cms",
+    "description": "My First Package for using cms in laravel application",
+    "authors": [{
+        "name": "Navid Dezashibi",
+        "email": "navid@dezashibi.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Dezashibi\\Cms\\": "src/"
+        }
+    },
+    "require": {
+
+        "Illuminate/Support": "~5"
+    }
+}
