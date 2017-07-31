@@ -11,6 +11,14 @@ class CmsServiceProvider extends ServiceProvider
         });
 
         $this->mergeConfigFrom(__DIR__."/config/cmsconf.php" , "cms");
+
+        
+
+        $this->app->register(\Caffeinated\Flash\FlashServiceProvider::class);
+
+        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+
+        $loader->alias('Flash', \Caffeinated\Flash\Facades\Flash::class);
     }
 
     public function boot()

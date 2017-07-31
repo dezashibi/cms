@@ -5,7 +5,7 @@
 // });
 
 
-Route::group(['middleware' => 'adminMiddleware:protected' ,'namespace' => 'Dezashibi\Cms\Http\Controllers'], function() {
+Route::group(['middleware' => 'adminMiddleware' ,'namespace' => 'Dezashibi\Cms\Http\Controllers'], function() {
     Route::get("/adminpanel", 'AdminPanelController@index');
     Route::get("/adminpanel/config",function() {
         return config("cms.url");
